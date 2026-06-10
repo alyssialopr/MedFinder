@@ -1,0 +1,6 @@
+{
+  "name": "easyPharma",
+  "description": "Application de localisation de pharmacies disposant des médicaments recherchés avec scan d'ordonnance et gestion des équivalences.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
