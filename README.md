@@ -1,4 +1,4 @@
-# easyPharma (MedFinder)
+# easyPharma
 
 Application web de recherche de pharmacies et de disponibilité de médicaments. easyPharma permet de composer une liste de traitements, de scanner une ordonnance grâce à l'IA Google Gemini, puis de trouver les officines les plus proches disposant des produits recherchés — y compris leurs équivalents génériques.
 
@@ -39,8 +39,9 @@ Application web de recherche de pharmacies et de disponibilité de médicaments.
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/alyssialopr/MedFinder.git
-cd MedFinder
+git clone https://github.com/alyssialopr/EasyPharma.git
+cd EasyPharma
+
 
 # Installer les dépendances
 npm install
@@ -122,7 +123,7 @@ Content-Type: application/json
 ## Structure du projet
 
 ```
-MedFinder/
+EasyPharma/
 ├── server.ts              # Serveur Express + routes API + Vite
 ├── src/
 │   ├── App.tsx            # Interface principale
