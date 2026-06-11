@@ -926,7 +926,7 @@ export default function App() {
                                 {/* Volumetric count badge */}
                                 <div className="flex items-center gap-2 shrink-0 sm:self-center">
                                   {isFullyAvailable ? (
-                                    <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-extrabold rounded-lg bg-emerald-100 text-emerald-800 border border-emerald-200 shadow-sm animate-pulse">
+                                    <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-extrabold rounded-lg bg-emerald-100 text-emerald-800 border border-emerald-200 shadow-sm">
                                       <Check size={12} className="stroke-3" />
                                       EN STOCK
                                     </span>
@@ -999,14 +999,14 @@ export default function App() {
                   </div>
 
                   {/* Call-to actions to contact and map directions */}
-                  <div className="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
+                  <div className="mt-8 pt-6  border-t border-slate-100 flex flex-col sm:flex-row gap-3 ">
                     <a 
                       href={`tel:${activePharmacy.telephone}`}
                       onClick={(e) => {
                         e.preventDefault(); 
                         triggerToast(`Appel simulé vers ${activePharmacy.nom} : ${activePharmacy.telephone}`, "info");
                       }} 
-                      className="flex-1 h-14 px-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl flex items-center justify-center gap-4 shadow-lg shadow-emerald-100 transition-colors text-sm"
+                      className="flex-1 h-14 px-3 sm:px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl flex items-center justify-center gap-4 shadow-lg shadow-emerald-100 transition-colors text-sm sm:p-8"
                       id="action-call-pharmacy"
                     >
                       <Phone size={16} />
@@ -1017,7 +1017,7 @@ export default function App() {
                       href={`https://maps.google.com/?q=${encodeURIComponent(activePharmacy.nom + ", " + activePharmacy.adresse)}`}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex-1 h-14 px-3 bg-white border  border-slate-200 hover:bg-slate-50 text-slate-700 font-bold rounded-xl flex items-center justify-center gap-4 shadow-lg shadow-slate-100 transition-colors text-sm"
+                      className="flex-1 h-14 px-3 sm:px-8 py-3 bg-white border  border-slate-200 hover:bg-slate-50 text-slate-700 font-bold rounded-xl flex items-center justify-center gap-4 shadow-lg shadow-slate-100 transition-colors text-sm"
                       id="action-map-directions"
                     >
                       <Map size={16} className="text-slate-400" />
