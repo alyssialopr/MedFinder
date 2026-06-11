@@ -500,7 +500,7 @@ export default function App() {
             <span className="max-w-30 truncate">{currentCityName}</span>
           </div>
 
-          {user ? (
+          {/* {user ? (
             <div className="flex items-center gap-2">
               <div className="flex flex-col items-end text-xs">
                 <span className="font-bold text-slate-800">{user.prenom} {user.nom}</span>
@@ -517,7 +517,7 @@ export default function App() {
             >
               Créer compte / Connexion
             </button>
-          )}
+          )} */}
         </div>
       </header>
 
