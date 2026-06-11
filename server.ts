@@ -207,10 +207,10 @@ async function startServer() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`[Medfinder Server] Serveur démarré sur http://localhost:${PORT}`);
+    console.log(`[EasyPharma Server] Serveur démarré sur http://localhost:${PORT}`);
   });
 }
 
 startServer().catch((error) => {
-  console.error("Échec du démarrage du serveur Medfinder :", error);
+  console.error("Échec du démarrage du serveur EasyPharma :", error);
 });

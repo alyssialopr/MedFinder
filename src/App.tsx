@@ -415,7 +415,7 @@ export default function App() {
   const activePharmacy = sortedPharmacies.find(p => p.id === selectedPharmacyId) || sortedPharmacies[0];
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-emerald-100 selection:text-emerald-900" id="medfinder-app">
+    <div className="flex flex-col min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-emerald-100 selection:text-emerald-900" id="easyPharma-app">
       
       {/* Toast Notification Container */}
       {toastMessage && (
@@ -527,7 +527,7 @@ export default function App() {
         {/* Left Drawer Block: Selected Medications List (Checklist d'Ordonnance) */}
         <div className="w-full lg:w-97.5 border-r border-slate-200 bg-white flex flex-col shrink-0" id="sidebar-prescription-cart">
           
-          {/* Quick Info & Scan Banner */}
+          {/* Quick Info & Scan Banner
           <div className="p-4 bg-emerald-50/50 border-b border-slate-100 flex items-center justify-between" id="scan-trigger-banner">
             <div className="flex items-center gap-2.5">
               <div className="w-8 h-8 rounded-lg bg-emerald-600/10 flex items-center justify-center text-emerald-700">
@@ -546,7 +546,7 @@ export default function App() {
               <Sparkles size={12} />
               Scanner
             </button>
-          </div>
+          </div> */}
 
           {/* Search bar on mobile only */}
           <div className="p-4 border-b border-slate-100 md:hidden block" id="mobile-search-bar">
@@ -681,7 +681,7 @@ export default function App() {
         </div>
 
         {/* Center / Right Content Split: Nearest Officines List & Detail Focus */}
-        <div className="flex-1 flex flex-col md:flex-row overflow-hidden" id="medfinder-office-explorer">
+        <div className="flex-1 flex flex-col md:flex-row overflow-hidden" id="easyPharma-office-explorer">
           
           {/* List of Near Pharmacies */}
           <div className="w-full md:w-87.5 border-r border-slate-200 bg-white flex flex-col shrink-0 overflow-hidden" id="pharmacy-listings-container">
