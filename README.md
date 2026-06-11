@@ -1,6 +1,6 @@
 # easyPharma
 
-Application web de recherche de pharmacies et de disponibilité de médicaments. easyPharma permet de composer une liste de traitements, de scanner une ordonnance grâce à l'IA Google Gemini, puis de trouver les officines les plus proches disposant des produits recherchés — y compris leurs équivalents génériques.
+Application web de recherche de pharmacies et de disponibilité de médicaments. easyPharma permet de composer une liste de traitements, de scanner une ordonnance grâce à l'IA Google Gemini, puis de trouver les pharmacies les plus proches disposant des produits recherchés — y compris leurs équivalents génériques.
 
 > **Note :** Ce projet est une démonstration. Les stocks de pharmacies et l'authentification sont simulés. Les données médicales proviennent d'un référentiel public de démonstration.
 
@@ -144,7 +144,7 @@ EasyPharma/
 
 1. **Ajouter des médicaments** — Recherchez par nom dans la barre du haut ou utilisez les ajouts rapides
 2. **Scanner une ordonnance** — Cliquez sur « Scanner », importez une photo ou choisissez un exemple de démo
-3. **Consulter les pharmacies** — Les officines proches s'affichent avec un score de disponibilité
+3. **Consulter les pharmacies** — Les pharmacies proches s'affichent avec un score de disponibilité
 4. **Voir le détail** — Sélectionnez une pharmacie pour consulter le stock produit par produit et les génériques disponibles
 
 ---

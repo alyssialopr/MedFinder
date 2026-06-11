@@ -714,7 +714,7 @@ export default function App() {
             {/* List Header */}
             <div className="p-4 border-b border-slate-100 flex justify-between items-center bg-slate-50/50 shrink-0">
               <span className="text-xs font-extrabold text-slate-500 uppercase tracking-widest">
-                {sortedPharmacies.length} Officines à proximité
+                {sortedPharmacies.length} Pharmacies à proximité
               </span>
               <span className="text-[10px] font-extrabold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded tracking-wide">
                 TRI : PROXIMITÉ
@@ -834,7 +834,7 @@ export default function App() {
                 <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 mb-4 animate-pulse">
                   <MapPin size={32} />
                 </div>
-                <h3 className="text-lg font-bold text-slate-700">Recherche d'officines...</h3>
+                <h3 className="text-lg font-bold text-slate-700">Recherche de pharmacies...</h3>
                 <p className="text-sm text-slate-400 max-w-sm mt-1">
                   Détection de votre position en cours, ou veuillez sélectionner une position dans la zone de simulation.
                 </p>
