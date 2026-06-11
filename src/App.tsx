@@ -1173,12 +1173,13 @@ export default function App() {
                 </span>
 
                 {/* Simulated file selector / Camera area */}
-                <div className="border-2 border-dashed border-slate-200 rounded-2xl relative bg-slate-50 hover:bg-slate-100/50 cursor-pointer min-h-45 flex flex-col items-center justify-center p-4 text-center transition-all group">
+                <div className="border-2 border-dashed border-slate-200 rounded-2xl relative bg-slate-50 min-h-45 flex flex-col items-center justify-center p-4 text-center transition-all group cursor-default">
                   <input 
                     type="file" 
                     accept="image/*"
                     onChange={handleFileChange}
-                    className="absolute inset-0 opacity-0 cursor-pointer z-10" 
+                    disabled
+                    className="absolute inset-0 opacity-0 cursor-not-allowed z-10" 
                     title="Prendre une photo ou importer un fichier d'ordonnance"
                   />
                   
@@ -1195,7 +1196,7 @@ export default function App() {
                           setScanImage(null);
                           setScanResult(null);
                         }}
-                        className="absolute bottom-2 right-2 px-2 py-1 bg-slate-800 text-white text-[10px] rounded font-bold hover:bg-slate-700 transition-all shadow-md"
+                        className="absolute bottom-2 right-2 px-2 py-1 bg-slate-800 text-white text-[10px] rounded font-bold transition-all shadow-md"
                       >
                         Retirer l'image
                       </button>
@@ -1218,7 +1219,7 @@ export default function App() {
                     <span className="text-xs font-extrabold text-slate-700">Pas d'ordonnance sous la main ? Testez la démo :</span>
                   </div>
                   <div className="text-[11px] text-slate-500 mb-2 leading-snug">
-                    Sélectionnez une prescription d'exemple authentique pour observer comment l'IA de Gemini extrait instantanément le traitement :
+                    Sélectionnez une prescription d'exemple authentique:
                   </div>
                   
                   <div className="flex flex-col gap-1.5">
